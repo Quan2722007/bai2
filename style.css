@@ -1,0 +1,302 @@
+html {
+    font-family: "Inter";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(232, 245, 255, 0.852);
+    padding: 32px 0;
+}
+.container {
+    max-width: 1240px;
+    width: 90%;
+    display: flex;
+    gap: 50px;
+}
+.section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.box.boxChange {
+    align-items: start;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    align-items: end;
+}
+.wrapText {
+    height: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 70%;
+    position: relative;
+    padding: 0 12px;
+    color: #222222c6;
+    display: flex;
+    align-items: center;
+}
+.wrapText::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    border-radius: 12px;
+    background-color: blue;
+    left: 0;
+    top: 0;
+}
+.wrapLetter {
+    width: 70%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222c6;
+}
+.wrapInput {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.649);
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    padding-left: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.488);
+}
+.wrapInput i {
+    width: 18px;
+    height: 18px;
+}
+.wrapInput input {
+    width: 100%;
+    height: 90%;
+    font-size: 1rem;
+    border: 0;
+    font-weight: 500;
+    background-color: transparent;
+    outline: none;
+    padding: 10px 12px 10px 0;
+}
+p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 55, 55, 0.748);
+    margin: 0;
+}
+#Add {
+    background-color: rgb(13, 185, 13);
+    color: white;
+    border: 0;
+    height: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 0 6.5px 6.5px 0;
+}
+.wrapP {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+}
+#MultiSelect {
+    display: flex;
+    gap: 8px;
+    width: 70%;
+    flex-wrap: wrap;
+    height: auto;
+}
+#MultiSelect .cardUser {
+    display: flex;
+    gap: 12px;
+    border-radius: 15px;
+    border: 1.5px solid rgba(201, 201, 201, 0.51);
+    padding: 8px 12px;
+    background-color: white;
+    align-items: center;
+}
+#MultiSelect .cardUser .blockContent {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+#MultiSelect .cardUser .blockContent i {
+    width: 16px;
+    height: 16px;
+}
+#MultiSelect .cardUser .blockContent .userAdded {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222222b6;
+}
+#MultiSelect .cardUser .fa-x {
+    opacity: 0.7;
+    cursor: pointer;
+}
+#inputCalendar::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    pointer-events: none;
+}
+.fa-calendar-days {
+    height: 100%;
+    width: 16px;
+    height: 16px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+.icon {
+    width: 24px;
+    height: 16px;
+}
+.buttonPassword {
+    position: relative;
+    padding-right: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.buttonPassword .fa-eye {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+}
+.buttonPassword .fa-eye-slash {
+    display: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+}
+#inputPassword {
+    letter-spacing: 3.5px;
+}
+#inputPassword::placeholder {
+    letter-spacing: 0;
+}
+.link {
+    padding-right: 12px;
+    border-right: 2px solid rgba(128, 128, 128, 0.71);
+}
+#inputLink {
+    border-right: 2px solid rgba(128, 128, 128, 0.71);
+    height: 60%;
+}
+.wrapIcon {
+    position: relative;
+    height: 100%;
+    padding: 0 20px 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-clone {
+    position: absolute;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+}
+.wrapIcon .fa-check {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+}
+.disable {
+    pointer-events: none;
+}
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 12px;
+    outline: none;
+}
+textarea::placeholder {
+    font-family: "Inter";
+}
+.submit {
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    height: auto;
+}
+.submit button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgba(24, 186, 24, 0.888);
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+#conficationSub {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(83, 209, 83);
+    margin: 0;
+}
+
+select {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+}
+#symbol {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 5px 0 10px;
+    border-left: 2px solid rgba(128, 128, 128, 0.71);
+    height: 60%;
+    font-family: "Inter";
+}
+@media only screen and (max-width: 1024px) {
+    .wrapLetter {
+        width: 95%;
+    }
+    .wrapText {
+        width: 95%;
+    }
+    .wrapInput {
+        width: 95%;
+    }
+    .wrapP {
+        width: 95%;
+    }
+    .submit {
+        width: 95%;
+    }
+    textarea {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .box {
+        align-items: start;
+    }
+    #Add {
+        padding: 10px 0;
+    }
+}
