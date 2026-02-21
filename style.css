@@ -153,6 +153,12 @@ p {
     opacity: 0;
     pointer-events: none;
 }
+#inputCalendar::placeholder {
+    color: #222222c6;
+    font-size: 16px;
+    font-family: "Inter";
+    transition: l;
+}
 .fa-calendar-days {
     height: 100%;
     width: 16px;
@@ -252,7 +258,29 @@ textarea::placeholder {
     color: rgb(83, 209, 83);
     margin: 0;
 }
-
+.iti__search-input-wrapper {
+    width: 100%;
+    padding-left: 12px !important;
+    padding-right: 30px !important;
+}
+.iti__search-input {
+}
+.iti__search-icon {
+    width: 18px;
+    height: 18px;
+    left: auto !important;
+    cursor: pointer;
+    right: 16px !important;
+}
+.iti__search-clear {
+    right: 40px !important;
+    padding: 0 !important;
+}
+.iti__search-icon-svg {
+    --iti-globe-height: 18px;
+    width: var(--iti-globe-height);
+    height: var(--iti-globe-height);
+}
 select {
     cursor: pointer;
     border: 0;
@@ -298,5 +326,14 @@ select {
     }
     #Add {
         padding: 10px 0;
+    }
+    .iti__search-input {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        padding: 10px 0;
+        outline: none;
+    }
+    .iti__search-clear {
+        right: 40px !important;
     }
 }

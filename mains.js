@@ -45,7 +45,7 @@ const inputPhoneNumber = document.getElementById("inputPhoneNumber");
 const outputphoneNumber = window.intlTelInput(inputPhoneNumber, {
     initialCountry: "auto",
     geoIpLookup: getIp,
-    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@latest/build/js/utils.js",
     onlyCountries: [],
     nationalMode: false,
     separateDialCode: true,
@@ -53,6 +53,7 @@ const outputphoneNumber = window.intlTelInput(inputPhoneNumber, {
     allowDropdown: true,
     countrySearch: true,
 });
+
 const inputMulSelec = document.getElementById("inputMulSelec");
 const Add = document.getElementById("Add");
 Add.addEventListener("click", () => {

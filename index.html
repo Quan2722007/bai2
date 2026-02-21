@@ -30,7 +30,16 @@
                     <div class="wrapText">Calendar</div>
                     <div class="wrapLetter">Start date</div>
                     <div class="wrapInput">
-                        <input type="date" id="inputCalendar" />
+                        <input
+                            type="text"
+                            id="inputCalendar"
+                            placeholder="mm/dd/yy"
+                            onfocus="
+                                this.type = 'date';
+                                this.showPicker();
+                            "
+                            onblur="if (!this.value) this.type = 'text';"
+                        />
                         <i class="fa-regular fa-calendar-days"></i>
                     </div>
                 </div>
